@@ -1,0 +1,8 @@
+extends ../shared/template
+block title
+  h1 Aliens List
+block content
+  h1=`Name: ${currentAlien.name}`
+  a.btn.btn-default(href=`/aliens/delete/${currentAlien.id}`) Delete
+  img.profile-photo(src=currentAlien.photo)
+  img.planet-photo(src=currentAlien.planet)

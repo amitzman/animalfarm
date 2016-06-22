@@ -1,0 +1,23 @@
+.alien-thumbnail {
+  width: 5em;
+  height: 5em;
+
+}
+td, th {
+  border: thin black solid;
+  padding: 5px;
+}
+.alien-name {
+  font-size: 2em;
+  text-align: center;
+}
+table {
+  width:100%;
+}
+
+.profile-photo, .planet-photo {
+  width: 30em;
+  height: auto;
+  display:block;
+  padding: 1em;
+}

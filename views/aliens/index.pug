@@ -1,0 +1,16 @@
+extends ../shared/template
+block title
+  h1 Aliens List
+block content
+  h2 Registered Aliens
+  table
+    thead
+      th IMAGE
+      th ALIEN'S NAME
+    tbody
+      each a in aliens
+        tr
+          td.alien-thumbnail
+            img.img-responsive.alien-thumbnail(src=a.photo)
+          td.alien-name
+            a(href=`/aliens/${a.id}`)=a.name

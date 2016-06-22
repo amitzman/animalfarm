@@ -1,0 +1,17 @@
+extends ../shared/template
+block title
+  h1 New
+block content
+  h1 Create New Alien
+  form(action='/aliens', method = 'post')
+    .form-group
+      label Name
+      input.form-control(type='text', placeholder='Name', name ='name')
+    .form-group
+      label Photo
+      input.form-control(type='text', name = 'photo')
+    .form-group
+      label Planet
+      input.form-control(type='text', name='planet')
+    .form-group
+      button.btn.btn-default(type='submit') Submit
